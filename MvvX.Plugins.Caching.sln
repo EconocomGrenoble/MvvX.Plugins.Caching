@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.25914.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{CE3A7668-C38A-4012-9E59-E23723103E1E}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B936CB30-521C-4C4E-98AA-D7A07862B34F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.Caching.Wpf.UnitTests", "MvvX.Plugins.Caching.Wpf.UnitTests\MvvX.Plugins.Caching.Wpf.UnitTests.csproj", "{16A9F501-F3CE-4B92-B5F5-2F6E4A71D8F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.Caching.Droid", "MvvX.Plugins.Caching.Droid\MvvX.Plugins.Caching.Droid.csproj", "{1983BA4D-4030-4994-AAC0-619C16C1CA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.Caching.Droid.UnitTests", "MvvX.Plugins.Caching.Droid.UnitTests\MvvX.Plugins.Caching.Droid.UnitTests.csproj", "{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,16 @@ Global
 		{16A9F501-F3CE-4B92-B5F5-2F6E4A71D8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16A9F501-F3CE-4B92-B5F5-2F6E4A71D8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16A9F501-F3CE-4B92-B5F5-2F6E4A71D8F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1983BA4D-4030-4994-AAC0-619C16C1CA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1983BA4D-4030-4994-AAC0-619C16C1CA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1983BA4D-4030-4994-AAC0-619C16C1CA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1983BA4D-4030-4994-AAC0-619C16C1CA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +55,7 @@ Global
 		{C46676C8-CF9D-4C24-8286-8A1D09C64B72} = {CE3A7668-C38A-4012-9E59-E23723103E1E}
 		{12D26CFB-81D8-40D5-B5E9-D96476CBB178} = {47644FD9-5862-47C5-98D1-95133D93E429}
 		{16A9F501-F3CE-4B92-B5F5-2F6E4A71D8F8} = {B936CB30-521C-4C4E-98AA-D7A07862B34F}
+		{1983BA4D-4030-4994-AAC0-619C16C1CA1D} = {47644FD9-5862-47C5-98D1-95133D93E429}
+		{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C} = {B936CB30-521C-4C4E-98AA-D7A07862B34F}
 	EndGlobalSection
 EndGlobal
