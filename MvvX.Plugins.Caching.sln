@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.Caching.Droid"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.Caching.Droid.UnitTests", "MvvX.Plugins.Caching.Droid.UnitTests\MvvX.Plugins.Caching.Droid.UnitTests.csproj", "{25660D5A-C27A-46B1-BBC2-AC100BB3BD1C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client apps", "Client apps", "{53B17B2A-F1A6-4E4C-A3BC-CB6041400655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
