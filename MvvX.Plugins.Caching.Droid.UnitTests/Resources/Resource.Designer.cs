@@ -26,6 +26,24 @@ namespace MvvX.Plugins.Caching.Droid.UnitTests
 		
 		public static void UpdateIdValues()
 		{
+			global::MvvmCross.Resource.Attribute.MvxBind = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Attribute.MvxBind;
+			global::MvvmCross.Resource.Attribute.MvxDropDownItemTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Resource.Attribute.MvxGroupItemTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Resource.Attribute.MvxItemTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Resource.Attribute.MvxLang = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Attribute.MvxLang;
+			global::MvvmCross.Resource.Attribute.MvxTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Resource.Id.MvvmCrossTagId = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Resource.Id.MvxBindingTagUnique = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Resource.Styleable.MvxBinding = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Resource.Styleable.MvxBinding_MvxBind = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Resource.Styleable.MvxBinding_MvxLang = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Resource.Styleable.MvxControl = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxControl;
+			global::MvvmCross.Resource.Styleable.MvxControl_MvxTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Resource.Styleable.MvxExpandableListView = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Resource.Styleable.MvxListView = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxListView;
+			global::MvvmCross.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Resource.Styleable.MvxListView_MvxItemTemplate = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Styleable.MvxListView_MvxItemTemplate;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionHostName = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Id.OptionHostName;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionPort = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Id.OptionPort;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionRemoteServer = global::MvvX.Plugins.Caching.Droid.UnitTests.Resource.Id.OptionRemoteServer;
@@ -52,6 +70,24 @@ namespace MvvX.Plugins.Caching.Droid.UnitTests
 		
 		public partial class Attribute
 		{
+			
+			// aapt resource value: 0x7f010000
+			public const int MvxBind = 2130771968;
+			
+			// aapt resource value: 0x7f010004
+			public const int MvxDropDownItemTemplate = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int MvxGroupItemTemplate = 2130771973;
+			
+			// aapt resource value: 0x7f010003
+			public const int MvxItemTemplate = 2130771971;
+			
+			// aapt resource value: 0x7f010001
+			public const int MvxLang = 2130771969;
+			
+			// aapt resource value: 0x7f010002
+			public const int MvxTemplate = 2130771970;
 			
 			static Attribute()
 			{
@@ -82,59 +118,65 @@ namespace MvvX.Plugins.Caching.Droid.UnitTests
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int OptionHostName = 2131034113;
+			// aapt resource value: 0x7f040000
+			public const int MvvmCrossTagId = 2130968576;
 			
-			// aapt resource value: 0x7f050002
-			public const int OptionPort = 2131034114;
+			// aapt resource value: 0x7f040001
+			public const int MvxBindingTagUnique = 2130968577;
 			
-			// aapt resource value: 0x7f050000
-			public const int OptionRemoteServer = 2131034112;
+			// aapt resource value: 0x7f040003
+			public const int OptionHostName = 2130968579;
 			
-			// aapt resource value: 0x7f050010
-			public const int OptionsButton = 2131034128;
+			// aapt resource value: 0x7f040004
+			public const int OptionPort = 2130968580;
 			
-			// aapt resource value: 0x7f05000b
-			public const int ResultFullName = 2131034123;
+			// aapt resource value: 0x7f040002
+			public const int OptionRemoteServer = 2130968578;
 			
-			// aapt resource value: 0x7f05000d
-			public const int ResultMessage = 2131034125;
+			// aapt resource value: 0x7f040012
+			public const int OptionsButton = 2130968594;
 			
-			// aapt resource value: 0x7f05000c
-			public const int ResultResultState = 2131034124;
+			// aapt resource value: 0x7f04000d
+			public const int ResultFullName = 2130968589;
 			
-			// aapt resource value: 0x7f05000a
-			public const int ResultRunSingleMethodTest = 2131034122;
+			// aapt resource value: 0x7f04000f
+			public const int ResultMessage = 2130968591;
 			
-			// aapt resource value: 0x7f05000e
-			public const int ResultStackTrace = 2131034126;
+			// aapt resource value: 0x7f04000e
+			public const int ResultResultState = 2130968590;
 			
-			// aapt resource value: 0x7f050006
-			public const int ResultsFailed = 2131034118;
+			// aapt resource value: 0x7f04000c
+			public const int ResultRunSingleMethodTest = 2130968588;
 			
-			// aapt resource value: 0x7f050003
-			public const int ResultsId = 2131034115;
+			// aapt resource value: 0x7f040010
+			public const int ResultStackTrace = 2130968592;
 			
-			// aapt resource value: 0x7f050007
-			public const int ResultsIgnored = 2131034119;
+			// aapt resource value: 0x7f040008
+			public const int ResultsFailed = 2130968584;
 			
-			// aapt resource value: 0x7f050008
-			public const int ResultsInconclusive = 2131034120;
+			// aapt resource value: 0x7f040005
+			public const int ResultsId = 2130968581;
 			
-			// aapt resource value: 0x7f050009
-			public const int ResultsMessage = 2131034121;
+			// aapt resource value: 0x7f040009
+			public const int ResultsIgnored = 2130968585;
 			
-			// aapt resource value: 0x7f050005
-			public const int ResultsPassed = 2131034117;
+			// aapt resource value: 0x7f04000a
+			public const int ResultsInconclusive = 2130968586;
 			
-			// aapt resource value: 0x7f050004
-			public const int ResultsResult = 2131034116;
+			// aapt resource value: 0x7f04000b
+			public const int ResultsMessage = 2130968587;
 			
-			// aapt resource value: 0x7f05000f
-			public const int RunTestsButton = 2131034127;
+			// aapt resource value: 0x7f040007
+			public const int ResultsPassed = 2130968583;
 			
-			// aapt resource value: 0x7f050011
-			public const int TestSuiteListView = 2131034129;
+			// aapt resource value: 0x7f040006
+			public const int ResultsResult = 2130968582;
+			
+			// aapt resource value: 0x7f040011
+			public const int RunTestsButton = 2130968593;
+			
+			// aapt resource value: 0x7f040013
+			public const int TestSuiteListView = 2130968595;
 			
 			static Id()
 			{
@@ -174,11 +216,11 @@ namespace MvvX.Plugins.Caching.Droid.UnitTests
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Hello = 2131034112;
 			
 			static String()
 			{
@@ -186,6 +228,51 @@ namespace MvvX.Plugins.Caching.Droid.UnitTests
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Styleable
+		{
+			
+			public static int[] MvxBinding = new int[] {
+					2130771968,
+					2130771969};
+			
+			// aapt resource value: 0
+			public const int MvxBinding_MvxBind = 0;
+			
+			// aapt resource value: 1
+			public const int MvxBinding_MvxLang = 1;
+			
+			public static int[] MvxControl = new int[] {
+					2130771970};
+			
+			// aapt resource value: 0
+			public const int MvxControl_MvxTemplate = 0;
+			
+			public static int[] MvxExpandableListView = new int[] {
+					2130771973};
+			
+			// aapt resource value: 0
+			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
+			
+			public static int[] MvxListView = new int[] {
+					2130771971,
+					2130771972};
+			
+			// aapt resource value: 1
+			public const int MvxListView_MvxDropDownItemTemplate = 1;
+			
+			// aapt resource value: 0
+			public const int MvxListView_MvxItemTemplate = 0;
+			
+			static Styleable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Styleable()
 			{
 			}
 		}
