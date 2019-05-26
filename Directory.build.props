@@ -32,9 +32,5 @@
   <ItemGroup Condition="'$(IsTestProject)' != 'true' and '$(SourceLinkEnabled)' != 'false' and '$(IsLibraryProject)' == 'true'">
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="6.2.3" />
-  </ItemGroup>
   
 </Project>
