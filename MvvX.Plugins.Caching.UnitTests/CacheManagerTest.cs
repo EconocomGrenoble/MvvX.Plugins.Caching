@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MvvX.Plugins.Caching.Wpf.UnitTests
+namespace MvvX.Plugins.Caching.UnitTests
 {
     /// <summary>
     /// Description résumée pour CacheManagerTest
