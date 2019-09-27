@@ -14,7 +14,6 @@
     <PackageProjectUrl>https://github.com/mathieumack/MvvX.Plugins.Caching</PackageProjectUrl>
     <Authors>MACK Mathieu</Authors>
     <Company></Company>
-    <Version>2019.0.0.0</Version>
     <Description>This package contains a memory cache manager for your application.</Description>
     <RepositoryUrl>https://github.com/mathieumack/MvvX.Plugins.Caching</RepositoryUrl>
     <PackageTags>mvvm;mvvmcross;xamarin;android;ios;mac;forms;monodroid;monotouch;xamarin.android;xamarin.ios;wpf;plugins</PackageTags>
