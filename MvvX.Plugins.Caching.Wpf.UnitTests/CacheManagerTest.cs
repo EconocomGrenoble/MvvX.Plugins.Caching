@@ -9,7 +9,7 @@ namespace MvvX.Plugins.Caching.Wpf.UnitTests
     [TestClass]
     public class CacheManagerTest
     {
-        private int durationCache = 60;
+        private readonly int durationCache = 60;
 
         [TestMethod]
         public void CacheManager_GetSetFromCache()
@@ -92,23 +92,5 @@ namespace MvvX.Plugins.Caching.Wpf.UnitTests
             for (int i = 1; i < 10; i++)
                 Assert.IsFalse(cacheManager.IsSet("key_" + i.ToString()));
         }
-
-        // TODO : Fix this unit test
-        //[TestMethod]
-        //public void CacheManager_TestPatternKey()
-        //{
-        //    var cacheManager = new CacheManager("Test.Caching.Wpf");
-
-        //    cacheManager.Clear();
-            
-        //    for (int i = 1; i < 10; i++)
-        //        cacheManager.Set("key_" + i.ToString(), i * i, durationCache, "keys");
-
-        //    cacheManager.Remove("keys");
-
-        //    Assert.IsFalse(cacheManager.IsSet("keys"), "keys is set, not removed");
-        //    for (int i = 1; i < 10; i++)
-        //        Assert.IsFalse(cacheManager.IsSet("key_" + i.ToString()), "key_" + i.ToString() + " is set, not removed");
-        //}
     }
 }

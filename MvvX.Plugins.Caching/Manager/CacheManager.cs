@@ -64,11 +64,11 @@ namespace MvvX.Plugins.Caching
 
         #endregion
         
-        public T Get<T>(string key)
+        public T Get<T>(string cacheKey)
         {
-            if (IsSet(key))
+            if (IsSet(cacheKey))
             {
-                return (T)Cache[key.ToLower()];
+                return (T)Cache[cacheKey.ToLower()];
             }
             else
             {
@@ -99,11 +99,11 @@ namespace MvvX.Plugins.Caching
         /// <summary>
         /// Indique si une élément existe dans le cache pour la clée donnée
         /// </summary>
-        /// <param name="key">Clée à tester</param>
+        /// <param name="cacheKey">Clée à tester</param>
         /// <returns></returns>
-        public bool IsSet(string key)
+        public bool IsSet(string cacheKey)
         {
-            return !IsThisNull(key);
+            return !IsThisNull(cacheKey);
         }
 
         /// <summary>
@@ -155,21 +155,21 @@ namespace MvvX.Plugins.Caching
         /// Si l'objet n'existe pas, il est généré puis mis en cache avant d'être renvoyé
         /// </summary>
         /// <typeparam name="T">Type de l'objet</typeparam>
-        /// <param name="cacheKey">clé</param>
+        /// <param name="key">clé</param>
         /// <param name="cacheTime">Durée de stockage dans le cache</param>
         /// <param name="patternKey">Clé parente</param>
         /// <param name="acquire">Fonction d'acquisition de l'objet</param>
         /// <returns>Objet dans le cache</returns>
-        public T Get<T>(string cacheKey, int cacheTime, string patternKey, Func<T> acquire)
+        public T Get<T>(string key, int cacheTime, string patternKey, Func<T> acquire)
         {
-            if (IsSet(cacheKey))
+            if (IsSet(key))
             {
-                return Get<T>(cacheKey);
+                return Get<T>(key);
             }
             else
             {
                 var result = acquire();
-                Set(cacheKey, result, cacheTime, patternKey);
+                Set(key, result, cacheTime, patternKey);
                 return result;
             }
         }
