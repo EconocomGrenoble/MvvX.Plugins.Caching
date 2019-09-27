@@ -16,7 +16,7 @@ namespace MvvX.Plugins.Caching.Wpf.UnitTests
         {
             var cacheManager = new CacheManager("Test.Caching.Wpf");
             
-            cacheManager.Clear();
+            cacheManager.Clear(); 
             
             for (int i = 1; i < 10; i++)
                 cacheManager.Set("key_" + i.ToString(), i * i, durationCache, "keys");
