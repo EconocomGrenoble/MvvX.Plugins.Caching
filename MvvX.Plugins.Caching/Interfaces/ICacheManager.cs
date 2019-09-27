@@ -66,5 +66,14 @@ namespace MvvX.Plugins.Caching
         /// <param name="acquire">Function used to insert the item in cache if it not exists</param>
         /// <returns></returns>
         T Get<T>(string key, int cacheTime, string patternKey, Func<T> acquire);
+
+        /// <summary>
+        /// Allow you to insert an object in the cache manager
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="data"></param>
+        /// <param name="cacheTime"></param>
+        /// <param name="patternKey"></param>
+        void Set(string key, object data, int cacheTime, string patternKey);
     }
 }

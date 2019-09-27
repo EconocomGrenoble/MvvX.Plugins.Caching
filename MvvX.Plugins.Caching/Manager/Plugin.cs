@@ -14,7 +14,7 @@ namespace MvvX.Plugins.Caching
         {
             var config = configuration as PluginConfiguration;
             if (config == null || string.IsNullOrWhiteSpace(config.GlobalCacheKey))
-                throw new ArgumentNullException("configuration is invalid. null or globalKey is null or white spaces");
+                throw new ArgumentNullException(nameof(configuration), "configuration is invalid. null or globalKey is null or white spaces");
 
             configurationKey = config.GlobalCacheKey;
         }
