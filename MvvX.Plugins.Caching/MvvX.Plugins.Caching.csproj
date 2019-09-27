@@ -5,7 +5,7 @@
     <AssemblyName>MvvX.Plugins.Caching</AssemblyName>
     <RootNamespace>MvvX.Plugins.Caching</RootNamespace>
     <PackageId>MvvX.Plugins.Caching</PackageId>
-    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid81;net461</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>CAcing manager (MvvmCross plugin)</Product>
@@ -21,28 +21,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="platforms\**\*.cs" />
-    <None Include="platforms\**\*.cs" />
-    <None Include="Resources\*.cs" />
-    <Compile Remove="Resources\*.cs" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('net4')) ">
-    <Compile Include="platforms\wpf\**\*.cs" />
-    <Reference Include="System.Runtime.Caching" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
-    <Compile Include="platforms\ios\**\*.cs" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
-    <Compile Include="platforms\android\**\*.cs" />
-    <AndroidResource Include="Resources\**\*.xml" SubType="Designer" Generator="MSBuild:UpdateAndroidResources" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="6.2.3" />
+    <PackageReference Include="MvvmCross" Version="6.4.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="4.6.0" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
-﻿using MvvX.Plugins.Caching.System.Runtime.Caching;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Caching;
 
 namespace MvvX.Plugins.Caching
 {
@@ -11,7 +11,12 @@ namespace MvvX.Plugins.Caching
     {
         #region Constructor
 
-        private readonly string globalDependencyKey = "MvvX.Plugins.Caching.GlobalCacheKey";
+        private readonly string globalDependencyKey;
+
+        public CacheManager()
+        {
+            this.globalDependencyKey = "MvvX.Plugins.Caching.GlobalCacheKey";
+        }
 
         public CacheManager(string globalDependencyKey)
         {
@@ -22,11 +27,11 @@ namespace MvvX.Plugins.Caching
 
         #region Cache keys lists
 
-        private CustomMemoryCache Cache
+        private ObjectCache Cache
         {
             get
             {
-                return CustomMemoryCache.Default;
+                return MemoryCache.Default;
             }
         }
 
@@ -34,10 +39,8 @@ namespace MvvX.Plugins.Caching
         {
             if (Cache[globalDependencyKey] == null)
             {
-                CacheItemPolicy policy = new CacheItemPolicy()
-                {
-                    AbsoluteExpiration = DateTimeOffset.MaxValue
-                };
+                CacheItemPolicy policy = new CacheItemPolicy();
+                policy.AbsoluteExpiration = DateTimeOffset.MaxValue;
                 Cache.Add(globalDependencyKey, DateTime.Now.ToString(), policy);
             }
 
@@ -60,7 +63,7 @@ namespace MvvX.Plugins.Caching
         }
 
         #endregion
-
+        
         public T Get<T>(string key)
         {
             if (IsSet(key))
@@ -75,24 +78,22 @@ namespace MvvX.Plugins.Caching
 
         public void Set(string key, object data, int cacheTime, string patternKey)
         {
-            if (data == null || string.IsNullOrWhiteSpace(key))
+            if (data == null)
+                return;
+
+            if (string.IsNullOrWhiteSpace(key))
                 return;
 
             string lowerCacheKey = key.ToLower();
-            int duration = GetRandomDuration(cacheTime);
 
             CacheItem item = new CacheItem(lowerCacheKey, data);
             CacheItemPolicy policy = new CacheItemPolicy();
-            policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(duration);
+            policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(cacheTime);
             policy.ChangeMonitors.Add(GetCacheDependency(patternKey));
             Cache.Add(item, policy);
-        }
 
-        private int GetRandomDuration(int duration)
-        {
-            int minDuration = duration * (100 - 25) / 100;
-            int maxDuration = duration * (100 + 25) / 100;
-            return new Random().Next(minDuration, maxDuration);
+            List<string> keys = new List<string>() { patternKey.ToLower() };
+            Cache.CreateCacheEntryChangeMonitor(keys);
         }
 
         /// <summary>
